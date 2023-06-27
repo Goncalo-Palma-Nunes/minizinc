@@ -32,6 +32,7 @@ constraint
 constraint
    forall(i in 1..n-1)(cost[i] == (C[path[i]] * P[path[i+1]]));
 
+% The cost of the the n-th vertex to the starting vertex
 constraint
   cost[n] == (C[path[n]] * P[path[1]]);
 
